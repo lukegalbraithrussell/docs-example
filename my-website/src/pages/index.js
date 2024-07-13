@@ -15,7 +15,7 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           Hello hello hello
         </Heading>
-        <p className="hero__subtitle">boy i hope i know what im doing</p>
+        <p className="hero__subtitle">i am changing the text here in the hopes github actions will work</p>
         <div className={styles.buttons}>
         </div>
       </div>
