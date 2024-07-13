@@ -15,7 +15,7 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           Hello hello hello
         </Heading>
-        <p className="hero__subtitle">with this spot, with this timing, we can do it!!!!!</p>
+        <p className="hero__subtitle">h e r e w e g o!</p>
         <div className={styles.buttons}>
         </div>
       </div>
