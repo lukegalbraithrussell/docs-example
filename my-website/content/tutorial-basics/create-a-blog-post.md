@@ -1,4 +1,5 @@
 ---
+slug: /example/create-a-blog-post
 sidebar_position: 3
 ---
 
