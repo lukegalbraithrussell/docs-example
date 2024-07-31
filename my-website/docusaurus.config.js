@@ -55,6 +55,21 @@ const config = {
     ],
   ],
 
+  plugins:
+  [
+
+  ['@docusaurus/plugin-client-redirects',
+    {
+      redirects: [
+        {
+          to: '/getting-started',
+          from: ['/tutorial/getting-started', '/', '/concepts/basic', '/concepts/advanced'],
+        },
+      ],
+    },
+  ],
+],
+
   clientModules: [
     require.resolve('./redirects.js'),
 ],
