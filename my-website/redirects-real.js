@@ -4,8 +4,8 @@ if (ExecutionEnvironment.canUseDOM) {
   (function() {
     // List of specific paths to redirect
     const redirects = {
-      '/': '/intro',
-      '/tutorials/intro': '/intro',
+      'docs-example/': 'docs-example/intro',
+      'docs-example/tutorials/intro': 'docs-example/intro',
     };
 
     // Get the current path
