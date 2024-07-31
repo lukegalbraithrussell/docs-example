@@ -57,6 +57,7 @@ const config = {
 
   clientModules: [
     require.resolve('./redirects.js'),
+    require.resolve('./redirects-real.js'),
 ],
 
   themeConfig:
