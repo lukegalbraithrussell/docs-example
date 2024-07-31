@@ -7,7 +7,7 @@ if (ExecutionEnvironment.canUseDOM) {
       "/docs-example/concepts#basic",
       "/docs-example/concepts#test",
       "/docs-example/tutorial-basics/create-a-page#test",
-      "https://slack.dev/bolt-js/docs-example/tutorial-basics#create-a-document",
+      "/docs-example/tutorial-basics#create-a-document",
       "/concepts#attempt",
       "/bolt-js/concepts#basic",
       "/bolt-js/concepts#advanced",
