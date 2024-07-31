@@ -63,7 +63,7 @@ const config = {
       redirects: [
         {
           to: '/intro',
-          from: ['/tutorial/getting-started', '/', '/concepts/basic', '/concepts/advanced'],
+          from: ['/tutorial/getting-started'],
         },
       ],
     },
