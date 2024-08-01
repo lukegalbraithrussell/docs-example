@@ -11,17 +11,24 @@ const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
-  trailingSlash: false,
 
   // Set the production url of your site here
   url: 'https://lukegalbraithrussell.github.io',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/docs-example/',
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'lukegalbraithrussell', // Usually your GitHub org/user name.
   projectName: 'docs-example', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -47,13 +54,23 @@ const config = {
     ],
   ],
 
-  clientModules: [
-    require.resolve('./redirects.js'),
-    require.resolve('./redirects-real.js'),
+  plugins:
+  [
+
+  ['@docusaurus/plugin-client-redirects',
+    {
+      redirects: [
+        {
+          to: '/',
+          from: ['tutorial-basics'],
+        },
+      ],
+    },
+  ],
 ],
 
-plugins:
-['docusaurus-theme-github-codeblock',
+  clientModules: [
+    require.resolve('./redirects.js'),
 ],
 
   themeConfig:
