@@ -62,7 +62,7 @@ const config = {
       redirects: [
         {
           to: '/',
-          from: ['tutorial-basics'],
+          from: ['/tutorial-basics'],
         },
       ],
     },
