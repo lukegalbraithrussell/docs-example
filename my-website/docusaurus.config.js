@@ -69,10 +69,6 @@ const config = {
   ],
 ],
 
-  clientModules: [
-    require.resolve('./redirects.js'),
-],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
