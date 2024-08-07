@@ -4,6 +4,13 @@ sidebar_position: 1
 
 # Tutorial Intro
 
+The current version is sdkLatestVersion
+
+```
+sdkLatestVersion
+```
+
+
 Let's discover **Docusaurus in less than 5 minutes**.
 
 ## Getting Started

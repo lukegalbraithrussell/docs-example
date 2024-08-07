@@ -24,9 +24,24 @@ jobs:
       - name: Install dependencies
         run: npm ci
         working-directory: ./my-website
+
+      - name: Read version from YAML file
+        id: read_version
+        run: |
+          VERSION=$(grep 'sdkLatestVersion:' my-website/version.yml | awk '{print $2}')
+          echo "sdkLatestVersion=$VERSION" >> $GITHUB_ENV
+
+      - name: Replace placeholders in Markdown files
+        run: |
+          DOCS_DIR="./my-website/docs"
+          find $DOCS_DIR -name "*.md" | while read file; do
+            sed -i "s/sdkLatestVersion/${{ env.sdkLatestVersion }}/g" "$file"
+          done
+
       - name: Build website
         run: npm run build
         working-directory: ./my-website
+
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:

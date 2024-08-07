@@ -53,10 +53,6 @@ const config = {
   ['@docusaurus/plugin-client-redirects',
     {
       redirects: [
-        {
-          to: '/',
-          from: ['/tutorial-basics'],
-        },
       ],
     },
   ],
