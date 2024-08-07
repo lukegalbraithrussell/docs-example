@@ -19,7 +19,7 @@ const sidebars = {
     {
       type: 'link',
       label: 'Reference',
-      href: '/api-docs/slack_bolt/',
+      href: 'https://oss.sonatype.org/service/local/repositories/releases/archive/com/slack/api/slack-api-client/sdkLatestVersion/slack-api-client-sdkLatestVersion-javadoc.jar/!/com/slack/api/package-summary.html',
     },
   ],
 };
