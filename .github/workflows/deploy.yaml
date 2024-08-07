@@ -36,7 +36,7 @@ jobs:
         run: |
           sdkLatestVersionValue=$(grep 'sdkLatestVersion:' my-website/version.yml | awk '{print $2}')
           okhttpVersionValue=$(grep 'okhttpVersion:' my-website/version.yml | awk '{print $2}')
-          slf4jApiVersion-Value=$(grep 'slf4jApiVersion:' my-website/version.yml | awk '{print $2}')
+          slf4jApiVersionValue=$(grep 'slf4jApiVersion:' my-website/version.yml | awk '{print $2}')
           kotlinVersionValue=$(grep 'kotlinVersion:' my-website/version.yml | awk '{print $2}')
           helidonVersionValue=$(grep 'helidonVersion:' my-website/version.yml | awk '{print $2}')
           javaxWebsocketApiVersionValue=$(grep 'javaxWebsocketApiVersion:' my-website/version.yml | awk '{print $2}')
