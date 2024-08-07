@@ -58,7 +58,7 @@ jobs:
       - name: Replace placeholders in .md files
         run: |
           DOCS_DIR="./my-website"
-          find $DOCS_DIR \( -name "*.md" -o -name "./my-website/sidebars.js" \)   | while read file; do
+          find $DOCS_DIR \( -name "*.md" -o -name "my-website/sidebars.js" \)   | while read file; do
             sed -i "s/sdkLatestVersion/${{ env.sdkLatestVersion }}/g" "$file"
             sed -i "s/okhttpVersion/${{ env.okhttpVersion }}/g" "$file"
             sed -i "s/slf4jApiVersion/${{ env.slf4jApiVersion }}/g" "$file"
