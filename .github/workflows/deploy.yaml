@@ -33,7 +33,7 @@ jobs:
 
       - name: Replace placeholders in Markdown files
         run: |
-          DOCS_DIR="./my-website/docs"
+          DOCS_DIR="./my-website/content"
           find $DOCS_DIR -name "*.md" | while read file; do
             sed -i "s/sdkLatestVersion/${{ env.sdkLatestVersion }}/g" "$file"
           done
