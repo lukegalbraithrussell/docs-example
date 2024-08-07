@@ -4,6 +4,17 @@ sidebar_position: 1
 
 # Tutorial Intro
 
+sdkLatestVersion: 1.40.3
+okhttpVersion: 4.10.0
+slf4jApiVersion: 1.7.36
+kotlinVersion: 1.7.21
+helidonVersion: 2.5.0
+javaxWebsocketApiVersion: 1.1
+springBootVersion: 3.0.0
+compatibleMicronautVersion: 3.x
+quarkusVersion: 2.12.0.Final
+tyrusStandaloneClientVersion: 1.19
+
 [Javadoc](https://oss.sonatype.org/service/local/repositories/releases/archive/com/slack/api/slack-api-client/sdkLatestVersion/slack-api-client-sdkLatestVersion-javadoc.jar/!/com/slack/api/audit/response/SchemasResponse.html)
 
 
