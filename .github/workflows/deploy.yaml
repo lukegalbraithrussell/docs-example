@@ -28,16 +28,16 @@ jobs:
       - name: Read version from YAML file
         id: read_version
         run: |
-          sdkLatestVersionValue=$(grep 'sdkLatestVersion:' my-websiteversion.yml | awk '{print $2}')
-          okhttpVersionValue=$(grep 'okhttpVersion:' my-websiteversion.yml | awk '{print $2}')
-          slf4jApiVersion-Value=$(grep 'slf4jApiVersion:' my-websiteversion.yml | awk '{print $2}')
-          kotlinVersionValue=$(grep 'kotlinVersion:' my-websiteversion.yml | awk '{print $2}')
-          helidonVersionValue=$(grep 'helidonVersion:' my-websiteversion.yml | awk '{print $2}')
-          javaxWebsocketApiVersionValue=$(grep 'javaxWebsocketApiVersion:' my-websiteversion.yml | awk '{print $2}')
-          springBootVersionValue=$(grep 'springBootVersion:' my-websiteversion.yml | awk '{print $2}')
-          compatibleMicronautVersionValue=$(grep 'compatibleMicronautVersion:' my-websiteversion.yml | awk '{print $2}')
-          quarkusVersionValue=$(grep 'quarkusVersion:' my-websiteversion.yml | awk '{print $2}')
-          tyrusStandaloneClientVersionValue=$(grep 'tyrusStandaloneClientVersion:' my-websiteversion.yml | awk '{print $2}')
+          sdkLatestVersionValue=$(grep 'sdkLatestVersion:' my-website/version.yml | awk '{print $2}')
+          okhttpVersionValue=$(grep 'okhttpVersion:' my-website/version.yml | awk '{print $2}')
+          slf4jApiVersion-Value=$(grep 'slf4jApiVersion:' my-website/version.yml | awk '{print $2}')
+          kotlinVersionValue=$(grep 'kotlinVersion:' my-website/version.yml | awk '{print $2}')
+          helidonVersionValue=$(grep 'helidonVersion:' my-website/version.yml | awk '{print $2}')
+          javaxWebsocketApiVersionValue=$(grep 'javaxWebsocketApiVersion:' my-website/version.yml | awk '{print $2}')
+          springBootVersionValue=$(grep 'springBootVersion:' my-website/version.yml | awk '{print $2}')
+          compatibleMicronautVersionValue=$(grep 'compatibleMicronautVersion:' my-website/version.yml | awk '{print $2}')
+          quarkusVersionValue=$(grep 'quarkusVersion:' my-website/version.yml | awk '{print $2}')
+          tyrusStandaloneClientVersionValue=$(grep 'tyrusStandaloneClientVersion:' my-website/version.yml | awk '{print $2}')
           echo "sdkLatestVersion=$sdkLatestVersionValue" >> $GITHUB_ENV
           echo "okhttpVersion=$okhttpVersionValue" >> $GITHUB_ENV
           echo "slf4jApiVersion=$slf4jApiVersionValue" >> $GITHUB_ENV

@@ -4,8 +4,6 @@ sidebar_position: 1
 
 # Tutorial Intro
 
-woo
-
 sdkLatestVersion: 1.40.3
 okhttpVersion: 4.10.0
 slf4jApiVersion: 1.7.36
