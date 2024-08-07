@@ -62,7 +62,8 @@ jobs:
             sed -i "s/springBootVersion/${{ env.springBootVersion }}/g" "$file"
             sed -i "s/compatibleMicronautVersion/${{ env.compatibleMicronautVersion }}/g" "$file"
             sed -i "s/quarkusVersion/${{ env.quarkusVersion }}/g" "$file"
-            sed -i "s/tyrusStandaloneClientVersion/${{ env.tyrusStandaloneClientVersion }}/g" "$file"          done
+            sed -i "s/tyrusStandaloneClientVersion/${{ env.tyrusStandaloneClientVersion }}/g" "$file"
+            done
 
       - name: Build website
         run: npm run build
