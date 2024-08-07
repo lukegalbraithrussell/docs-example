@@ -5,6 +5,8 @@ sidebar_position: 3
 
 # Create a Blog Post
 
+[Javadoc](https://oss.sonatype.org/service/local/repositories/releases/archive/com/slack/api/slack-api-client/sdkLatestVersion/slack-api-client-sdkLatestVersion-javadoc.jar/!/com/slack/api/audit/response/SchemasResponse.html)
+
 cmon go 
 
 Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
