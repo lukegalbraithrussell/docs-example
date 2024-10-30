@@ -1,0 +1,48 @@
+:root {
+  --aubergine: #4a154b;
+  --aubergine-active: #7c3085;
+  --aubergine-light: #ce70cc;
+  --horchata: #f4ede4;
+  --slack-link: #36c5f0;
+  --slack-blue: #36c5f0;
+  --slack-dark-blue: #1264a3;
+  --grey: #868686;
+  --white: #fff;
+}
+table tr:nth-child(2n) {
+  background-color: inherit;
+}
+.markdown a,
+p a {
+  color: var(--slack-link);
+  text-decoration: underline;
+}
+[data-theme="light"] {
+  --ifm-color-primary: var(--aubergine-active);
+  --ifm-footer-background-color: var(--horchata);
+  --slack-link: var(--slack-dark-blue);
+}
+[data-theme="dark"] {
+  --ifm-color-primary: var(--aubergine-light);
+  --ifm-navbar-background-color: var(--aubergine);
+  --ifm-footer-background-color: var(--aubergine);
+  --slack-link: var(--slack-blue);
+}
+html[data-theme="dark"] {
+  --docusaurus-highlighted-code-line-bg: #0000004d;
+}
+.table-of-contents__link--active {
+  font-weight: 700;
+}
+div[class^="announcementBar_"] {
+  background: var(--horchata);
+  font-size: 20px;
+  height: 50px;
+}
+.sidebar-item-overview a {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+html[data-theme="light"] .sidebar-item-overview a {
+  --ifm-menu-color: #000;
+}
