@@ -12,8 +12,8 @@ const config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
-  url: 'https://lukegalbraithrussell.github.io',
-  baseUrl: '/docs-example/',
+  url: 'docs.lukerussell.info',
+  baseUrl: '/',
   organizationName: 'lukegalbraithrussell', // Usually your GitHub org/user name.
   projectName: 'docs-example', // Usually your repo name.
 
