@@ -1,0 +1,5 @@
+{
+  "/old-docs": "/docs",
+  "/legacy/api": "/api/v2",
+  "/v1/*": "/v2/:splat"
+} 

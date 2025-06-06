@@ -1,15 +1,33 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Redirect rules
+// Load redirect rules from JSON file
+const redirects = JSON.parse(fs.readFileSync(path.join(__dirname, 'redirects.json'), 'utf8'));
+
+// Redirect middleware
 app.use((req, res, next) => {
-  // Example redirect - customize these rules as needed
-  if (req.path === '/old-docs') {
-    return res.redirect(301, '/docs');
+  const path = req.path;
+  
+  // Check exact matches first
+  if (redirects[path]) {
+    return res.redirect(301, redirects[path]);
   }
-  // Add more redirect rules here as needed
+  
+  // Check wildcard matches
+  for (const [source, target] of Object.entries(redirects)) {
+    if (source.includes('*')) {
+      const pattern = new RegExp('^' + source.replace('*', '(.*)') + '$');
+      const match = path.match(pattern);
+      if (match) {
+        const splat = match[1];
+        return res.redirect(301, target.replace(':splat', splat));
+      }
+    }
+  }
+  
   next();
 });
 
@@ -23,4 +41,5 @@ app.get('*', (req, res) => {
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on port ${PORT}`);
+  console.log('Loaded redirects:', redirects);
 }); 
